@@ -1,0 +1,412 @@
+html, body{
+	margin:0;
+	scroll-behavior: smooth;
+}
+
+#fond{
+	background-image: url(./img/hero.jpg);
+	background-position: center;
+	background-size: 100%;
+	z-index: -10;
+	position: fixed;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+/* ------- MENU -------- */
+
+#menu{
+	font-family: 'Muli', arial narrow;
+	height: 60px;
+	width: 100%;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color:rgba(0, 0, 0, 0.8);;
+	border-bottom: #666666;
+	position: fixed;
+	z-index: 10;
+}
+
+#blocmenu{
+	width: 50%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#menu img{
+	width: 50px;
+	padding-left: 50px;
+}
+.categorie a{
+	color: #DBAC45;
+	text-decoration: none;
+}
+
+.categorie a:hover{
+	color: #415E53;
+}
+
+.bloc{
+	padding-top: 60px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+/* ------- HEADER -------- */
+
+header{
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 60px;
+}
+
+h1{
+	color: #DBAC45;
+	font-family: 'Muli', arrial narrow;
+}
+
+#blocbouton{
+	display: flex;
+}
+
+.button{
+	height: 50px;
+	margin: 20px;
+}
+
+.button a{
+	padding: 5px;
+	border-radius: 20px;
+	border:solid white;
+	text-decoration: none;
+	color: white;
+}
+
+.button a:hover{
+	border:solid red;
+	color: red;
+}
+
+/* ------- FOOD DELIVERY -------- */
+
+#fooddelivery{
+	z-index: 1;
+	background-color: white;
+	width: 100%;
+	padding-bottom: 50px;
+	font-family: 'Old Standard TT', serif;
+}
+
+.foodfast{
+	display: flex;
+	justify-content: space-around;
+}
+
+.blocfoodfast{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 15px 30px 15px 30px;
+}
+#blocmosaique{
+	width: 100%;
+}
+.mosaique{
+	display: flex;
+	justify-content: center;
+}
+
+.photofood{
+	position: relative;
+	width: 300px;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.recette:after{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(250, 250, 250, 0.4);
+	text-align: center;
+}
+
+.photofood:hover {
+	background-size: 400px;
+	transition: 0.3s;
+	z-index: 0;
+}
+
+.recette:hover:before{
+	opacity: 1;
+}
+
+.photofood:hover p {
+	opacity: 1;
+}
+
+p.recette{
+	opacity: 0;	
+}
+
+.recette{
+	padding: 15px;
+	font-family: arial narrow;
+	font-weight: bold;
+}
+
+#ph1{
+	background-image: url(./img/1.jpg);
+}
+#ph2{
+	background-image: url(./img/2.jpg);
+}
+#ph3{
+	background-image: url(./img/3.jpg);
+}
+#ph4{
+	background-image: url(./img/4.jpg);
+}
+#ph5{
+	background-image: url(./img/5.jpg);
+}
+#ph6{
+	background-image: url(./img/6.jpg);
+}
+#ph7{
+	background-image: url(./img/7.jpg);
+}
+#ph8{
+	background-image: url(./img/8.jpg);
+}
+
+/* ------- HOW IT WORK -------- */
+
+#howitwork{
+	background-color: #EFEFEF;
+	width: 100%;
+	z-index: 1;
+}
+
+#appli{
+	display: flex;
+}
+
+#photophone{
+	width: 350px;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:200px ;
+	background-image: url(./img/app-iPhone.png);
+}
+
+#blocinstruction{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.instruction{
+	margin: 20px;
+	font-family: arial narrow;
+	align-items: center;
+	display: flex;
+}
+
+.number{
+	margin-right: 20px;
+	border-radius: 50%;
+	border: solid #DBAC45;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	display: inline-block;
+	font-size: 30px;
+	color: #DBAC45;
+}
+
+/* ------- OUR CITIES -------- */
+
+#ourcities{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	background-color: white;
+	width: 100%;
+}
+
+#cities{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding:0 10px 0 10px;
+}
+#bloccities{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.photocities{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 250px;
+	width: 250px;
+	height: 150px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#cities p{
+	display: flex;
+	align-items: center;
+}
+#cities img{
+	margin-right: 10px;
+}
+.photocities:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);}
+
+#lisbon{
+	background-image: url(./img/lisbon-3.jpg);
+}
+#sf{
+	background-image: url(./img/san-francisco.jpg);
+}
+#berlin{
+	background-image: url(./img/berlin.jpg);
+}
+#london{
+	background-image: url(./img/london.jpg);
+}
+.comment{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 28%;
+	font-size: 15px;
+	color: black;
+	padding: 15px;
+	text-align: justify;
+	height: 200px;
+	background-color: #E5E5E5;
+	margin-left: 20px;
+}
+.comment p{
+	width: 70%;
+}
+.blocphotoname{
+	display: flex;
+}
+.phononame{
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	border-radius: 50%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+h3{
+	margin-left: 10px;
+	font-family: 'Muli', arrial narrow;
+}
+#alberto{
+	background-image: url(./img/customer-1.jpg);
+}
+#joana{
+	background-image: url(./img/customer-2.jpg);
+}
+#milton{
+	background-image: url(./img/customer-3.jpg);
+}
+/* ------- SIGN UP -------- */
+#signup{
+	padding-top: 60px;
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+#line{
+	display: flex;
+	flex-direction: column;
+}
+#check{
+	display: flex;
+	align-items: center;
+	height: 30px;
+}
+input, textarea{
+	background-color: rgba(63, 63, 63, 0.5);
+	border : black;
+}
+/* ------- FOOTER -------- */
+footer{
+	width: 100%;
+	height: 150px;
+	background-color: #333333;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer img{
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+#adresse{
+	text-align: justify;
+	width: 35%;
+	color: white;
+	font-size: 15px;
+}
+
+#adresse span a{
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 10px;
+	color: #DBAC45;
+	font-size: 17px;
+}
+#adresse span a:hover{
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 10px;
+	color: white;
+}
